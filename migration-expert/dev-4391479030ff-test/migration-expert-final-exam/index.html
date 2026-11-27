@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mattermost Certification</title>
+  <link rel="stylesheet" href="player.css">
+</head>
+<body>
+  <div class="app">
+    <nav class="sidebar" aria-label="Module pages">
+      <div class="module-title" id="module-title"></div>
+      <div class="progress" id="progress"></div>
+      <ol class="nav" id="nav"></ol>
+    </nav>
+    <main class="content">
+      <article id="page" class="page"></article>
+      <footer class="pager">
+        <button type="button" id="prev" class="btn secondary">&larr; Previous</button>
+        <span id="gate" class="gate" role="status"></span>
+        <span id="next-wrap" class="next-wrap">
+          <button type="button" id="next" class="btn" aria-describedby="gate">Next &rarr;</button>
+        </span>
+      </footer>
+    </main>
+  </div>
+  <aside id="debug" class="debug" hidden></aside>
+  <script src="scorm-api.js"></script>
+  <script src="course.js"></script>
+  <script src="player.js"></script>
+</body>
+</html>
